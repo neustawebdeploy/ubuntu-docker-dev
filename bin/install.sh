@@ -13,10 +13,13 @@ export DEBIAN_FRONTEND="noninteractive"
 
 echo "deb http://ppa.launchpad.net/ondrej/php5-5.6/ubuntu trusty main" >> /etc/apt/sources.list
 echo "deb-src http://ppa.launchpad.net/ondrej/php5-5.6/ubuntu trusty main" >> /etc/apt/sources.list
-
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4F4EA0AAE5267A6C
 apt-get update
+apt-get upgrade -y
+apt-get dist-upgrade -y
 
 apt-get install -y \
+    python-software-properties \
     supervisor \
     ssmtp \
     php5-cli \
