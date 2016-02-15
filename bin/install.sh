@@ -11,6 +11,8 @@ export DEBIAN_FRONTEND="noninteractive"
 # Install packages
 #############################
 
+add-apt-repository ppa:ondrej/php5-5.6
+
 apt-get update
 
 apt-get install -y \
