@@ -11,8 +11,8 @@ export DEBIAN_FRONTEND="noninteractive"
 # Install packages
 #############################
 
-echo "deb http://ppa.launchpad.net/ondrej/php5-5.6/ubuntu trusty main" >> /etc/apt/sources.list
-echo "deb-src http://ppa.launchpad.net/ondrej/php5-5.6/ubuntu trusty main" >> /etc/apt/sources.list
+echo "deb http://ppa.launchpad.net/ondrej/php5-oldstable/ubuntu trusty main" >> /etc/apt/sources.list
+echo "deb-src http://ppa.launchpad.net/ondrej/php5-oldstable/ubuntu trusty main" >> /etc/apt/sources.list
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4F4EA0AAE5267A6C
 apt-get update
 apt-get upgrade -y
